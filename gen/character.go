@@ -8,6 +8,7 @@ import (
 
 type Character struct {
 	Name     string
+	Race     string
 	Class    string
 	Subclass string
 	Party    []string
