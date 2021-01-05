@@ -1,4 +1,4 @@
-package gen
+package core
 
 func RandomCharacter() Character {
 	// Read all atlases
