@@ -1,0 +1,43 @@
+{
+    "races": [
+        "human",
+        "high elf",
+        "wood elf",
+        "asmodius tiefling",
+        "mephistopholes tiefling",
+        "zariel tiefling",
+        "gold dwarf",
+        "shield dwarf",
+        "lightfoot halfing",
+        "stout halfling",
+        "wood half elf",
+        "high half elf",
+        "lloth sworn drow",
+        "seldarine drow",
+        "githyanki"
+    ],
+    "classes": [
+        {
+            "name": "cleric",
+            "subs": [
+                "life",
+                "light",
+                "trickery"
+            ]
+        },
+        {
+            "name": "fighter",
+            "subs": [
+                "eldritch knight",
+                "battlemaster"
+            ]
+        }
+    ],
+    "party": [
+        "Lae'zel",
+        "Shadowheart",
+        "Gale",
+        "Astarion",
+        "Wyll"
+    ]
+}
