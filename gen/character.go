@@ -22,6 +22,10 @@ type Atlas struct {
 	Party []string `json:"party"`
 }
 
+func RandomRace(atlas Atlas) string {
+	return ""
+}
+
 func LoadAtlas(atlasPath string) Atlas {
 	var atlas Atlas
 

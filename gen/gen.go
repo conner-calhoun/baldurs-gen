@@ -8,7 +8,3 @@ func RandomCharacter() Character {
 		Party:    []string{},
 	}
 }
-
-func RandomRace(atlas Atlas) string {
-	return ""
-}
