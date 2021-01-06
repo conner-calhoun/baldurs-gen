@@ -8,12 +8,12 @@ import (
 )
 
 type Character struct {
-	Name     string   `json: "name"`
-	Gender   string   `json: "gender"`
-	Race     string   `json: "race"`
-	Class    string   `json: "class"`
-	Subclass string   `json: "subclass"`
-	Party    []string `json: "party"`
+	Name     string   `json:"name"`
+	Gender   string   `json:"gender"`
+	Race     string   `json:"race"`
+	Class    string   `json:"class"`
+	Subclass string   `json:"subclass"`
+	Party    []string `json:"party"`
 }
 
 type Atlas struct {
@@ -33,7 +33,7 @@ func (c Character) Display() {
 }
 
 func (a Atlas) RandomRace() string {
-	return ""
+	return a.Races[0]
 }
 
 func (a Atlas) RandomClass() string {
@@ -41,6 +41,7 @@ func (a Atlas) RandomClass() string {
 }
 
 func (a Atlas) RandomSubclass() string {
+	// NOTE: This depends on a class already being chosen
 	return ""
 }
 

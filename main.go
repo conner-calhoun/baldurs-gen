@@ -7,6 +7,9 @@ import (
 
 func main() {
 	fmt.Println("Baldur's Gate 3 Generator")
-	myChar := core.RandomCharacter()
+
+	// TODO: verify that all files exist in the data folder, possibly combine json files
+
+	myChar := core.RandomCharacter("data")
 	myChar.Display()
 }

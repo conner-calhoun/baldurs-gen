@@ -1,15 +1,17 @@
 package core
 
+import "fmt"
+
 // Return a random item from a list of strings
 func GetRandom(items []string) string {
 
 	return ""
 }
 
-func RandomCharacter() Character {
+func RandomCharacter(dataPath string) Character {
 	// Read all atlases
-	baseAtlas := LoadAtlas("data/atlas.json")
-	nameAtlas := LoadNameAtlas("data/names.json")
+	baseAtlas := LoadAtlas(fmt.Sprintf("%s/atlas.json", dataPath))
+	nameAtlas := LoadNameAtlas(fmt.Sprintf("%s/names.json", dataPath))
 
 	return Character{
 		Name:     nameAtlas.RandomName(),     // NameAtlas.Random()
