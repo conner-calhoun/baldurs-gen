@@ -5,6 +5,7 @@ func RandomCharacter() Character {
 
 	return Character{
 		Name:     "Random",   // NameAtlas.Random()
+		Gender:   "M|F|T",    // RandomGender()
 		Race:     "Random",   // Atlas.RandomRace()
 		Class:    "Random",   // Atlas.RandomClass()
 		Subclass: "Random",   // Atlas.RandomSubclass()

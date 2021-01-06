@@ -7,9 +7,6 @@ import (
 
 func main() {
 	fmt.Println("Baldur's Gate 3 Generator")
-
-	atlas := core.LoadAtlas("data/atlas.json")
-
-	fmt.Println("Races: ", atlas.Races)
-	fmt.Println("Classes: ", atlas.Classes[0].Name)
+	myChar := core.RandomCharacter()
+	myChar.Display()
 }
