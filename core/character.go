@@ -8,12 +8,12 @@ import (
 )
 
 type Character struct {
-	Name     string
-	Gender   string
-	Race     string
-	Class    string
-	Subclass string
-	Party    []string
+	Name     string   `json: "name"`
+	Gender   string   `json: "gender"`
+	Race     string   `json: "race"`
+	Class    string   `json: "class"`
+	Subclass string   `json: "subclass"`
+	Party    []string `json: "party"`
 }
 
 type Atlas struct {
@@ -32,8 +32,24 @@ func (c Character) Display() {
 	fmt.Println("Party: ", c.Party)
 }
 
-func RandomRace(atlas Atlas) string {
+func (a Atlas) RandomRace() string {
 	return ""
+}
+
+func (a Atlas) RandomClass() string {
+	return ""
+}
+
+func (a Atlas) RandomSubclass() string {
+	return ""
+}
+
+func (a Atlas) RandomParty() []string {
+	return []string{}
+}
+
+func RandomGender() string {
+	return GetRandom([]string{"Male", "Female", "Transgender"})
 }
 
 func LoadAtlas(atlasPath string) Atlas {
