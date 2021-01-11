@@ -1,11 +1,15 @@
 package core
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+	"time"
+)
 
 // Return a random item from a list of strings
 func GetRandom(items []string) string {
-
-	return ""
+	rand.Seed(time.Now().Unix())
+	return items[rand.Intn(len(items))]
 }
 
 func RandomCharacter(dataPath string) Character {

@@ -8,9 +8,9 @@ import (
 )
 
 type NameAtlas struct {
-	FirstHalf  []string
-	LastHalf   []string
-	Descriptor []string
+	FirstHalf  []string `json:"fhalf"`
+	LastHalf   []string `json:"lhalf"`
+	Descriptor []string `json:"desc"`
 }
 
 type Name struct {
@@ -27,7 +27,14 @@ func (n Name) Build() string {
 }
 
 func (n NameAtlas) RandomName() string {
-	return Name{}.Build()
+	fhalf := GetRandom(n.FirstHalf)
+	lhalf := GetRandom(n.LastHalf)
+
+	return Name{
+		FirstHalf:  fhalf,
+		LastHalf:   lhalf,
+		Descriptor: "",
+	}.Build()
 }
 
 func LoadNameAtlas(atlasPath string) NameAtlas {

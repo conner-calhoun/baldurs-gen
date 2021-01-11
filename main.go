@@ -10,6 +10,6 @@ func main() {
 
 	// TODO: verify that all files exist in the data folder, possibly combine json files
 
-	myChar := core.RandomCharacter("data")
+	myChar := core.RandomCharacter("./data")
 	myChar.Display()
 }

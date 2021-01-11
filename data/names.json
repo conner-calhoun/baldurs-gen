@@ -1,12 +1,15 @@
 {
     "fhalf":[
-        "Ro"
+        "Ro",
+        "Kil"
     ],
     "lhalf": [
-        "dan"
+        "dan",
+        "gore"
     ],
     "desc": [
         "the great",
-        "the terrible"
+        "the terrible",
+        "of ${city}"
     ]
 }
