@@ -3,12 +3,10 @@ package core
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 // Return a random item from a list of strings
 func GetRandom(items []string) string {
-	rand.Seed(time.Now().Unix())
 	return items[rand.Intn(len(items))]
 }
 
