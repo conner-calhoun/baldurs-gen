@@ -1,3 +1,6 @@
 body {
   margin: 0;
+  background: hsl(0, 0%, 10%);
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
 }
