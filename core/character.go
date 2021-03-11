@@ -9,7 +9,6 @@ import (
 
 type Character struct {
 	Name     string   `json:"name"`
-	Gender   string   `json:"gender"`
 	Race     string   `json:"race"`
 	Class    string   `json:"class"`
 	Subclass string   `json:"subclass"`
@@ -47,10 +46,6 @@ func (a Atlas) RandomSubclass() string {
 
 func (a Atlas) RandomParty() []string {
 	return []string{}
-}
-
-func RandomGender() string {
-	return GetRandom([]string{"Male", "Female", "Transgender"})
 }
 
 func LoadAtlas(atlasPath string) Atlas {

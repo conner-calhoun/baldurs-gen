@@ -17,7 +17,6 @@ func RandomCharacter(dataPath string) Character {
 
 	return Character{
 		Name:     nameAtlas.RandomName(),     // NameAtlas.Random()
-		Gender:   RandomGender(),             // RandomGender()
 		Race:     baseAtlas.RandomRace(),     // Atlas.RandomRace()
 		Class:    baseAtlas.RandomClass(),    // Atlas.RandomClass()
 		Subclass: baseAtlas.RandomSubclass(), // Atlas.RandomSubclass()
