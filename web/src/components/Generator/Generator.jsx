@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Generator.css'
+
 class Generator extends React.Component {
     constructor(props) {
         super(props);
