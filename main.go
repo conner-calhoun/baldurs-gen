@@ -14,6 +14,7 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	// TODO: verify that all files exist in the data folder, possibly combine json files
+	// TODO: combine all config/data files into a single atlas
 	myChar := core.RandomCharacter("./data")
 	myChar.Display()
 }
